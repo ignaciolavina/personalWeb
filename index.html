@@ -44,16 +44,19 @@
 
 <!--- A VER ESTO -->
 <!-- OMAR (Projects) SCRIPT -->
-<script src="./js/projects/jquery.magnific-popup.min.js"></script>
-<script src="./js/projects/custom.js"></script>
 
-<script src="./js/projects/jquery.js"></script>
+
+
+
 <script src="./js/projects/bootstrap.min.js"></script>
+<script src="./js/projects/custom.js"></script>
+<script src="./js/projects/jquery.js"></script>
+<script src="./js/projects/jquery.magnific-popup.min.js"></script>
+<script src="./js/projects/jquery.parallax.js"></script>
 <script src="./js/projects/magnific-popup-options.js"></script>
 <script src="./js/projects/owl.carousel.min.js"></script>
-<script src="./js/projects/jquery.parallax.js"></script>
+
 <script src="./js/projects/particles.min.js"></script>
-<script src="./js/projects/app.js"></script>
 
 
 
@@ -62,7 +65,7 @@
 
 
 </head>
-
+<body>
 
 <nav id="menu" class="navbar navbar-default">
   <div class="container-fluid">
@@ -125,6 +128,8 @@
 		</div>
 	</div>
 <!-- END HOME -->
+
+
 
 
 	<!-- ABOUT -->
@@ -274,6 +279,7 @@
 <!-- end EDUCATION -->
 
 
+
 <!-- Work section -->
 <section id="work" class="parallax-section" style="background-position: 50% -411px;">
      <div class="container">
@@ -328,6 +334,11 @@
           </div>
      </div>
 </section>
+
+
+
+
+
 
 
 
@@ -436,6 +447,47 @@ p {
     color: rgba(255, 255, 255, 0.66);
     letter-spacing: 2px;
 }
+
+
+
+
+/*---------------------------------------
+    Work section              
+-----------------------------------------*/
+
+#work {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#work .work-thumb {
+  text-align: center;
+  margin-bottom: 26px;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  top: 0;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+}
+
+#work .work-thumb:hover {
+  background: #ffffff;
+  box-shadow: 0px 16px 22px 0px rgba(90, 91, 95, 0.3);
+  top: -5px;
+}
+
+#work .work-thumb img {
+  width: 100%;
+  cursor: crosshair;
+}
+
+#work .work-thumb-item {
+  background: rgba(250,250,250,0.9);
+  padding: 8px 0px 12px 0px;
+  margin-top: 16px;
+}
+
+
 
 /* 06. ABOUT
 =================================================*/
