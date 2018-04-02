@@ -48,17 +48,6 @@
 
 
 
-<script src="./js/projects/bootstrap.min.js"></script>
-<script src="./js/projects/custom.js"></script>
-<script src="./js/projects/jquery.js"></script>
-<script src="./js/projects/jquery.magnific-popup.min.js"></script>
-<script src="./js/projects/jquery.parallax.js"></script>
-<script src="./js/projects/magnific-popup-options.js"></script>
-<script src="./js/projects/owl.carousel.min.js"></script>
-
-<script src="./js/projects/particles.min.js"></script>
-
-
 
 
 
@@ -306,17 +295,21 @@
                </div>
 
                <div class="col-md-4 col-sm-6">
-                    <!-- WORK THUMB -->
-                    <div class="work-thumb">
-                         <a href="./img/projects/work-2.jpg" class="image-popup">
+
+
+                    <!-- MODAL QUE FUNCIONA!!!-->
+               <div class="work-thumb">
+                         <a href="./img/projects/work-2.jpg" data-toggle="modal" data-target="#myModal">
                               <img src="./img/projects/work-2.jpg" class="img-responsive" alt="Work">
-                         </a>
+                         
                          <div class="work-thumb-item">
                               <h3>Jelly World</h3>
                               <p>Graphic, Branding Design</p>
                          </div>
-                    </div>
-               </div>
+                         </a>
+                </div>
+
+                <!-- FIN MODAL QUE FUNCIONA!!!-->
 
                <div class="col-md-4 col-sm-6">
                     <!-- WORK THUMB -->
@@ -333,6 +326,44 @@
 
           </div>
      </div>
+
+
+<!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+
+            <!--SLIDER-->
+            <div class="w3-content w3-display-container"  style="height: 200px">
+              <img class="mySlides" src="./a.jpg" style="width:100px">
+              <img class="mySlides" src="./b.jpg" style="width:100px">
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+            </div>
+
+            <!--END SLIDER-->
+        </div>
+        <div class="modal-footer">
+          <p>Some text in the modal FOOTER.</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
 </section>
 
 
