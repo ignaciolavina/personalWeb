@@ -40,9 +40,10 @@
 <link rel="stylesheet" href="./css/magnific-popup.css">
 <!--MODAL-->
 <link rel="stylesheet" href="./css/modal/modalStyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src="./js/modal/modal.js"></script>
+
 
 
 
@@ -286,8 +287,23 @@
                     </div>
                </div>
 
+
+                  <!-- MODAL QUE FUNCIONA!!!-->
+             <div class="col-md-4 col-sm-6">
+                 <div class="work-thumb">
+                           <a href="./img/projects/work-2.jpg" data-toggle="modal" data-target="#myModal">
+                                <img src="./img/projects/work-2.jpg" class="img-responsive" alt="Work">
+                           
+                           <div class="work-thumb-item">
+                                <h3>Jelly World</h3>
+                                <p>Graphic, Branding Design</p>
+                           </div>
+                           </a>
+                  </div>
+
+
+<!--
                <div class="col-md-4 col-sm-6">
-                    <!-- WORK THUMB -->
                     <div class="work-thumb">
                          <a href="./img/projects/Rraid.mp4" class="image-popup">
                               <video src="./img/projects/Rraid.mp4" class="img-responsive" alt="Work">
@@ -298,26 +314,14 @@
                          </div>
                     </div>
                </div>
+             -->
 
-               <div class="col-md-4 col-sm-6">
-
-
-                    <!-- MODAL QUE FUNCIONA!!!-->
-               <div class="work-thumb">
-                         <a href="./img/projects/work-2.jpg" data-toggle="modal" data-target="#myModal">
-                              <img src="./img/projects/work-2.jpg" class="img-responsive" alt="Work">
-                         
-                         <div class="work-thumb-item">
-                              <h3>Jelly World</h3>
-                              <p>Graphic, Branding Design</p>
-                         </div>
-                         </a>
-                </div>
 
                 <!-- FIN MODAL QUE FUNCIONA!!!-->
 
+<!--
                <div class="col-md-4 col-sm-6">
-                    <!-- WORK THUMB -->
+                    WORK THUMB
                     <div class="work-thumb">
                          <a href="images/work-3.jpg" class="image-popup">
                               <img src="./img/projects/work-3.jpg" class="img-responsive" alt="Work">
@@ -328,10 +332,10 @@
                          </div>
                     </div>
                </div>
+             -->
 
           </div>
      </div>
-
 
 <!-- Modal que funciona-->
   <div class="modal fade" id="myModal" role="dialog">
@@ -372,7 +376,25 @@
 </section>
 
 
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
 
 
 
