@@ -119,7 +119,7 @@ body {
 }
 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
-    background: #48b14d !important;
+
     visibility: visible;
     color: #fff;
 }
