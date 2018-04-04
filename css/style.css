@@ -116,6 +116,7 @@ body {
     background: #131313;
     color: #fff;
     border: none;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .btn-dark:hover, .btn-dark:focus, .btn-dark:active {
