@@ -11,3 +11,5 @@ https://www.google.es/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2F
 
 
 Organizar bien el proyecto (ASSETS./...)
+
+ordenar styles y mover a archivo css
