@@ -8,6 +8,10 @@
 		line-height: 45px;
 		font-weight: 600;
 	}
+
+	p {
+		    margin: 3.2rem 0
+	}
 	/* NAVIGATION */
 	.navbar-toggle .icon-bar {
 		background: #f8f8f8;
