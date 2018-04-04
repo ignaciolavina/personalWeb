@@ -1,0 +1,13 @@
+falta descometar la hoja de styles responsive en el archivo single.html (blog entry)
+
+borrar la hoja style_blog2 que es una copia pero para ver si funcionaba
+
+fondos oscuros en secciones claras y al reves (proyectos)
+
+en intereses poner ICONOS!! 
+https://www.google.es/imgres?imgurl=https%3A%2F%2Fcomps.canstockphoto.com%2Fblockchain-vector-icon-set-clipart-vector_csp43347653.jpg&imgrefurl=https%3A%2F%2Fwww.canstockphoto.com%2Fblockchain-vector-icon-set-43347653.html&docid=ifKrSatIV1ffpM&tbnid=_D8UNg5Hp0ZACM%3A&vet=10ahUKEwiZ0866xqDaAhVBmBQKHSmHAUQQMwhTKBQwFA..i&w=450&h=338&bih=637&biw=1366&q=icon%20blockchain&ved=0ahUKEwiZ0866xqDaAhVBmBQKHSmHAUQQMwhTKBQwFA&iact=mrc&uact=8
+
+https://www.google.es/imgres?imgurl=https%3A%2F%2Fpreviews.123rf.com%2Fimages%2Fahasoft2000%2Fahasoft20001507%2Fahasoft2000150700043%2F42217519-business-icon-set-these-flat-bicolor-icons-use-smooth-blue-colors-vector-images-are-isolated-on-a-wh.jpg&imgrefurl=https%3A%2F%2Fwww.123rf.com%2Fphoto_42217519_stock-vector-business-icon-set-these-flat-bicolor-icons-use-smooth-blue-colors-vector-images-are-isolated-on-a-wh.html&docid=gO4iw_MowJSQkM&tbnid=EzW149wUUeUqJM%3A&vet=10ahUKEwi3y6KDx6DaAhVFkRQKHcqlDb0QMwj_ASgJMAk..i&w=1300&h=1015&bih=637&biw=1366&q=business%20icon%20set&ved=0ahUKEwi3y6KDx6DaAhVFkRQKHcqlDb0QMwj_ASgJMAk&iact=mrc&uact=8
+
+
+Organizar bien el proyecto (ASSETS./...)
