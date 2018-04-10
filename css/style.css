@@ -933,10 +933,8 @@ body {
 /* 12. BLOG
 =================================================*/
 
-#blog {
-    padding: 90px 0 95px;
-    background: #fff;
-}
+/*lo que hay en la own style +... */
+
 
 .blog-item {
     width: 100%;
