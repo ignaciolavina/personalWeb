@@ -337,39 +337,39 @@
     <div class="container">
         <h1>Education</h1>
          <!-- TUT-->
-        <div class="row">
-            <div class="lib-panel">
-                <div class="row box-shadow">
-         <div class="col-md-4 col-sm-5 col-xs-12">
+         <div class="lib-panel row box-shadow">
+            <div class="col-md-4 col-sm-5 col-xs-12" style="margin-top: 30px text-align: center;">
+                <img class="education_img tut" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
+                <h5>Tampere University of Technology, Finland | 2016 - 2017</h5>
+            </div>
+            <div class="col-md-8 col-sm-5 col-xs-12">
+                <p>
+                <h4>Engineering bachelor, field of study: Computer Science & Industrial Management</h4>
+                    Average grade: 8,1.     Courses taken:<br>
 
-                <h1>titulo</h1>
+                    <b>Engineering:</b>
+                    Software Engineering Methodology, Software Business, Software Architectures, Psychology of Pervasive Computing, User Interface Design, Cryptography Engineering.<br>
 
-                
-                    
-                        <div class="col-md-6">
-                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
-                        </div>
-                            <div class="lib-row lib-header">
-                                Example library
-                                <div class="lib-header-seperator"></div>
-                            </div>
-                            <div class="lib-row lib-desc">
-                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-                            </div>
-                        
-                    </div>
-                </div>
+                    <b>Industrial Management:</b>
+                    Organizations and leadership, Strategic Management, Technology Strategy, Business Market Management, Basics of Information and Knowledge Management<br>
+   
+                    <b>Others: </b>
+                    Spoken Communication in English, TUT-Tandem (French language) Demola Project internship
+                    <br><br>
+                    </p>
             </div>
         </div>
-
+    </div>
         <!-- UC3m-->
+        <div class="container">
         <div class="lib-panel row box-shadow">
-                <div class="row">
+                
                     <div class="col-md-4 col-sm-5 col-xs-12">
-                        <img class="education_img" src="./img/education/uc3m.png">
+                        <img class="education_img uc3m" src="./img/education/uc3m.png">
                         <h5>University Carlos III de Madrid, Spain | 2014 - 2018</h5>
                     </div>
                     <div class="col-md-8 col-sm-5 col-xs-12">
+                        <p>
                         <h4>Double degree in Computer Science and Business Administration</h4>
                             Average grade: 7.4     Asociations & activity:<br>
                             <b>Imagineware association (member and teacher):</b>
@@ -378,6 +378,7 @@
                             - Course of mobile apps.<br>
                             Collaboration in the organization of 'The Hour of Code', a mundial event that brings the technology and informatics to the students.<br>
                             <b>Investments association (member)</b>
+                            </p>
                     </div>
                 </div>
         </div>
@@ -885,25 +886,45 @@ background: #ffffff;
 /*======EDUCATION==========*/
 
 #education {
-    padding: 90px 0 75px;
+    padding: 50px 0 75px;
     background: #fff;
 }
+
+#education h1 {
+    margin-bottom: 20px;
+}
+
 
 #education h2 {
     margin-top: 0;
 }
 
+#education h5{
+    text-align: center;
+}
 
 .education_img {
     width: 100%;
     margin: 0 auto;
     height: 100%;
+    vertical-align: middle;
+
 }
 
 .tut{
     width: 80%;
     margin: 10px;
     height: 100%;
+    vertical-align: middle;
+}
+
+
+.uc3m{
+    width: 80%;
+    margin: 10px;
+    height: 100%;
+    vertical-align: middle;
+    margin-top: 20%;
 }
 
 /*========timeline2==========*/
@@ -1095,13 +1116,20 @@ background: #ffffff;
 
 
 .lib-panel {
+    padding: : 20px;
     margin-bottom: 20Px;
 }
 .lib-panel img {
+    position: relative.center;
     width: 100%;
     background-color: transparent;
+    vertical-align: middle;
 }
 
+.lib-panel h1, h2, h3, h4, h5{
+    margin-top: 30px;
+    margin-bottom: : 30px;
+}
 .lib-panel .row,
 .lib-panel .col-md-6 {
     padding: 0;
