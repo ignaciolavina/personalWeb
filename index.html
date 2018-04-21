@@ -66,33 +66,7 @@
 
 
 
-<script type="text/javascript">
-    
-$(document).ready(function(){
- 
-  // hide our element on page load
- 
-  $('.education_img').waypoint(function() {
-      $('.education_img').addClass('fadeInLeft');
-  }, { offset: '50%' });
- 
 
-  $('.ani_left').waypoint(function() {
-      $('.ani_left').addClass('fadeInLeft');
-  }, { offset: '70%' });
- 
-  $('.ani_right').waypoint(function() {
-      $('.ani_right').addClass('fadeInRight');
-  }, { offset: '70%' });
- 
-    $('.ani_left2').waypoint(function() {
-      $('.ani_left2').addClass('fadeInLeft');
-  }, { offset: '30%' });
- 
- 
-});
-
-</script>
 
 
 </head>
@@ -138,12 +112,12 @@ $(document).ready(function(){
 				<div class="row">
 					<div class="home-text">
 						<!-- profile picture -->
-						<div class="profile-pic animated zoomIn">
+						<div class="profile-pic">
 							<img src="./img/me.jpg" height="50" class="img-responsive" alt="">
 						</div>
 
 						<!-- home title -->
-						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="aos-init aos-animate">
+						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="animated saludo aos-init aos-animate">
 							<h1>Hi, I'm Ignacio Laviña</h1>
 							<h3 id="text-rotator">
 								
@@ -562,7 +536,40 @@ $(document).ready(function(){
 -->
 
 
+<script type="text/javascript">
+    
+$(document).ready(function(){
 
+// saludo
+$('.saludo').css('opacity', 0);
+
+  $('.saludo').waypoint(function() {
+      $('.saludo').addClass('bounceIn');
+  }, { offset: '70%' });
+
+
+ 
+// hide our element on page load 
+$('.ani_left').css('opacity', 0);
+$('.ani_right').css('opacity', 0);
+$('.ani_left2').css('opacity', 0);
+
+  $('.ani_left').waypoint(function() {
+      $('.ani_left').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+  $('.ani_right').waypoint(function() {
+      $('.ani_right').addClass('fadeInRight');
+  }, { offset: '70%' });
+ 
+    $('.ani_left2').waypoint(function() {
+      $('.ani_left2').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+ 
+});
+
+</script>
 
 </body>
 </html>
