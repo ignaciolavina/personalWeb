@@ -76,6 +76,20 @@ $(document).ready(function(){
       $('.education_img').addClass('fadeInLeft');
   }, { offset: '50%' });
  
+
+  $('.ani_left').waypoint(function() {
+      $('.ani_left').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+  $('.ani_right').waypoint(function() {
+      $('.ani_right').addClass('fadeInRight');
+  }, { offset: '70%' });
+ 
+    $('.ani_left2').waypoint(function() {
+      $('.ani_left2').addClass('fadeInLeft');
+  }, { offset: '30%' });
+ 
+ 
 });
 
 </script>
@@ -438,7 +452,7 @@ $(document).ready(function(){
     <ul class="timeline">
         <li>
           <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Tampere University of Technollogy</h4>
               </div>
@@ -450,7 +464,7 @@ $(document).ready(function(){
         </li>
         <li class="timeline-inverted">
           <div class="timeline-badge warning"><i class="fa fa-briefcase"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel  ani_right animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">UKSA Work experience</h4>
             </div>
@@ -466,7 +480,7 @@ $(document).ready(function(){
         </li>
         <li>
           <div class="timeline-badge danger"><i class="fa fa-plane"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left2 animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Summer program experience</h4>
               </div>
