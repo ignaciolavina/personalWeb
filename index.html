@@ -33,6 +33,10 @@
 <!-- MENU TRANSITION JS -->
 <script src="./js/menu_transition.js"></script>
 
+<!-- WAYPOINT -->
+<script src="./animations/jquery.waypoints.min.js"></script>
+
+
 <!--
 	<script type="text/javascript" src="./js/aos.js" async=""></script>
 	<script type="text/javascript" src="./js/main.min.js" async=""></script>
@@ -42,7 +46,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>      -->
 <script type="text/javascript" src="./js/own/add_timeline.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+<!-- Include the above in your HEAD tag -->
 
 
 
@@ -51,6 +55,30 @@
 
 <!-- HOJA DE ESTILOS PROPIA -->
 <link rel="stylesheet" href="./css/own_uco_styles.css">
+
+<!-- ANIMATE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+<!-- WAYPOINT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+
+<script type="text/javascript">
+    
+$(document).ready(function(){
+ 
+  // hide our element on page load
+ 
+  $('.education_img').waypoint(function() {
+      $('.education_img').addClass('fadeInLeft');
+  }, { offset: '50%' });
+ 
+});
+
+</script>
 
 
 </head>
@@ -96,7 +124,7 @@
 				<div class="row">
 					<div class="home-text">
 						<!-- profile picture -->
-						<div class="profile-pic">
+						<div class="profile-pic animated zoomIn">
 							<img src="./img/me.jpg" height="50" class="img-responsive" alt="">
 						</div>
 
@@ -222,12 +250,12 @@
 
 <!-- EDUCATION -->
 <section id="education" class="container-fluid">
-    <div class="container">
+    <div class="container animated">
         <h1>Education</h1>
          <!-- TUT-->
          <div class="lib-panel row box-shadow">
             <div class="col-md-4 col-sm-5 col-xs-12" style="margin-top: 30px text-align: center;">
-                <img class="education_img tut" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
+                <img class="education_img tut animated" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
                 <h5>Tampere University of Technology, Finland | 2016 - 2017</h5>
             </div>
             <div class="col-md-8 col-sm-5 col-xs-12">
@@ -518,6 +546,7 @@
     <script src="./js/main.js"></script>
 
 -->
+
 
 
 
