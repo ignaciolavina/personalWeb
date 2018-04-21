@@ -338,41 +338,48 @@
         <h1>Education</h1>
          <!-- TUT-->
         <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-12" style="margin-top: 30px text-align: center;">
-                <img class="education_img" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
-                <h5>Tampere University of Technology, Finland | 2016 - 2017</h5>
-            </div>
-            <div class="col-md-8 col-sm-5 col-xs-12">
-                <h4>Engineering bachelor, field of study: Computer Science & Industrial Management</h4>
-                    Average grade: 8,1.     Courses taken:<br>
+            <div class="lib-panel">
+                <div class="row box-shadow">
+         <div class="col-md-4 col-sm-5 col-xs-12">
 
-                    <b>Engineering:</b>
-                    Software Engineering Methodology, Software Business, Software Architectures, Psychology of Pervasive Computing, User Interface Design, Cryptography Engineering.<br>
+                <h1>titulo</h1>
 
-                    <b>Industrial Management:</b>
-                    Organizations and leadership, Strategic Management, Technology Strategy, Business Market Management, Basics of Information and Knowledge Management<br>
-   
-                    <b>Others: </b>
-                    Spoken Communication in English, TUT-Tandem (French language) Demola Project internship
-                    <br><br>
+                
+                    
+                        <div class="col-md-6">
+                            <img class="lib-img-show" src="http://lorempixel.com/850/850/?random=123">
+                        </div>
+                            <div class="lib-row lib-header">
+                                Example library
+                                <div class="lib-header-seperator"></div>
+                            </div>
+                            <div class="lib-row lib-desc">
+                                Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
+                            </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
+
         <!-- UC3m-->
-        <div class="row">
-            <div class="col-md-4 col-sm-5 col-xs-12">
-                <img class="education_img" src="./img/education/uc3m.png">
-                <h5>University Carlos III de Madrid, Spain | 2014 - 2018</h5>
-            </div>
-            <div class="col-md-8 col-sm-5 col-xs-12">
-                <h4>Double degree in Computer Science and Business Administration</h4>
-                    Average grade: 7.4     Asociations & activity:<br>
-                    <b>Imagineware association (member and teacher):</b>
-                    Teacher of informatics and technological courses for university students:<br>
-                    - Course GIT (version control system for coding)<br>
-                    - Course of mobile apps.<br>
-                    Collaboration in the organization of 'The Hour of Code', a mundial event that brings the technology and informatics to the students.<br>
-                    <b>Investments association (member)</b>
-            </div>
+        <div class="lib-panel row box-shadow">
+                <div class="row">
+                    <div class="col-md-4 col-sm-5 col-xs-12">
+                        <img class="education_img" src="./img/education/uc3m.png">
+                        <h5>University Carlos III de Madrid, Spain | 2014 - 2018</h5>
+                    </div>
+                    <div class="col-md-8 col-sm-5 col-xs-12">
+                        <h4>Double degree in Computer Science and Business Administration</h4>
+                            Average grade: 7.4     Asociations & activity:<br>
+                            <b>Imagineware association (member and teacher):</b>
+                            Teacher of informatics and technological courses for university students:<br>
+                            - Course GIT (version control system for coding)<br>
+                            - Course of mobile apps.<br>
+                            Collaboration in the organization of 'The Hour of Code', a mundial event that brings the technology and informatics to the students.<br>
+                            <b>Investments association (member)</b>
+                    </div>
+                </div>
         </div>
     </div>        
 </section>
@@ -1084,6 +1091,66 @@ background: #ffffff;
   }
 }
 
+/* ======== EDUCATION CARDS ============*/
+
+
+.lib-panel {
+    margin-bottom: 20Px;
+}
+.lib-panel img {
+    width: 100%;
+    background-color: transparent;
+}
+
+.lib-panel .row,
+.lib-panel .col-md-6 {
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+.lib-panel .lib-row {
+    padding: 0 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 20px 0 20px;
+}
+
+.lib-panel .lib-row.lib-header .lib-header-seperator {
+    height: 2px;
+    width: 26px;
+    background-color: #d9d9d9;
+    margin: 7px 0 7px 0;
+}
+
+.lib-panel .lib-row.lib-desc {
+    position: relative;
+    height: 100%;
+    display: block;
+    font-size: 13px;
+}
+.lib-panel .lib-row.lib-desc a{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    left: 20px;
+}
+
+.row-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+}
+
+.no-padding {
+    padding: 0;
+}
 
 </style>
 
