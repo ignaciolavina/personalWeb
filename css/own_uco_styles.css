@@ -299,6 +299,10 @@ p {
   padding-bottom: 40px;
 }
 
+
+
+
+
 /* 07. SKILLS
 =================================================*/
 
@@ -398,6 +402,24 @@ background: #ffffff;
 #skills {
     background: #232B2B;
 }
+
+
+
+/*======SKILLS 2==========*/
+#language {}
+
+.ul_edited {
+  list-style-type: none;
+  position: absolute;
+  margin-left: -20px;
+}
+/*
+.li {
+padding: 50px;
+}
+*/
+
+#language .ul_edited :before{content: "\2014"} 
 
 
 
