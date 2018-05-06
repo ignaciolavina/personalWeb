@@ -33,6 +33,10 @@
 <!-- MENU TRANSITION JS -->
 <script src="./js/menu_transition.js"></script>
 
+<!-- WAYPOINT -->
+<script src="./animations/jquery.waypoints.min.js"></script>
+
+
 <!--
 	<script type="text/javascript" src="./js/aos.js" async=""></script>
 	<script type="text/javascript" src="./js/main.min.js" async=""></script>
@@ -42,7 +46,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>      -->
 <script type="text/javascript" src="./js/own/add_timeline.js"></script>
-<!------ Include the above in your HEAD tag ---------->
+
 
 
 
@@ -51,6 +55,18 @@
 
 <!-- HOJA DE ESTILOS PROPIA -->
 <link rel="stylesheet" href="./css/own_uco_styles.css">
+
+<!-- ANIMATE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+<!-- WAYPOINT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+
+
 
 
 </head>
@@ -75,14 +91,15 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About me</a></li>
+        <li><a href="#about">Profile</a></li>
       	<li><a href="#end_about">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
         <li><a href="#education">Education</a></li>
-        <li><a href="#end_home">Portfolio</a></li>
-        <li><a href="">Life Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
 
-        <li><a href="">Contact</a></li>
+        <li><a href="#language">Languages</a></li>
+        <li><a href="#timeline">Life Experience</a></li>
+
+        <li><a href="#footer-post">Contact</a></li>
         
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -101,7 +118,7 @@
 						</div>
 
 						<!-- home title -->
-						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="aos-init aos-animate">
+						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="animated saludo aos-init aos-animate">
 							<h1>Hi, I'm Ignacio Laviña</h1>
 							<h3 id="text-rotator">
 								
@@ -130,9 +147,9 @@
 					Studies and Knowledge on the areas of Healthcare, business administration and programming
 					</p>
 
-					<!-- about button -->
+					<!-- about button. CV: ./assets/pdf/CV.pdf-->
 					<p>
-						<a href="./assets/pdf/CV.pdf" class="btn btn-dark with-arrow smoth-scroll">My Resume
+						<a href="https://www.linkedin.com/in/ignacio-lavi%C3%B1a" class="btn btn-dark with-arrow smoth-scroll">My Resume
 							<i class="fa fa-download"></i>
 						</a>
 					</p>
@@ -145,7 +162,8 @@
 						- Software engineering<br>					
 						- Software developmenet<br>
 						- IA and Machine Learning<br>
-						- BlockChain
+						- BlockChain<br>
+            - Team management
 					</p>
 
 
@@ -163,7 +181,7 @@
     <section id="blog">
         <div class="container text-center">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-left">
                     <h2>Projects Blog Post</h2>
                 </div>
 
@@ -177,7 +195,7 @@
                             <h4>
                                 <a href="single.html">Scrum and Game Dev</a>
                             </h4>
-                            <p>The project consisted of developing the famous arcade game River Raid in a team using agile Scrum methodology, and Processing (for game dev).</p>
+                            <p>The project consisted of developing the arcade game River Raid in a team using agile Scrum methodology, and Processing (for game dev).</p>
                             <a href="single.html" class="btn btn-dark">Read more</a>
                         </div>
                     </div>
@@ -187,7 +205,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="blog-item">
                         <a href="single.html" class="blog-img">
-                            <img src="./img/blog_post/demola.jpg" class="img-responsive" alt="Blog 2">
+                            <img src="./img/blog_post/demola2.jpg" class="img-responsive" alt="Blog 2">
                         </a>
                         <div class="blog-desc">
                             <h4>
@@ -211,7 +229,7 @@
                                 <a href="single.html">LH Web App [Failed]</a>
                             </h4>
                             <p>A project where I lead a group of five univeristy students to create a web app for managing a tennis Sport Club</p>
-                            <a href="single.html" class="btn btn-dark">Read more</a>
+                            <a href="LH_blog.html" class="btn btn-dark">Read more</a>
                         </div>
                     </div>
                 </div>
@@ -222,12 +240,12 @@
 
 <!-- EDUCATION -->
 <section id="education" class="container-fluid">
-    <div class="container">
+    <div class="container animated">
         <h1>Education</h1>
          <!-- TUT-->
          <div class="lib-panel row box-shadow">
             <div class="col-md-4 col-sm-5 col-xs-12" style="margin-top: 30px text-align: center;">
-                <img class="education_img tut" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
+                <img class="education_img tut animated" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
                 <h5>Tampere University of Technology, Finland | 2016 - 2017</h5>
             </div>
             <div class="col-md-8 col-sm-5 col-xs-12">
@@ -262,8 +280,8 @@
                             Average grade: 7.4     Asociations & activity:<br>
                             <b>Imagineware association (member and teacher):</b>
                             Teacher of informatics and technological courses for university students:<br>
-                            - Course GIT (version control system for coding)<br>
-                            - Course of mobile apps.<br>
+                            - Teacher of course GIT (version control system for coding)<br>
+                            - Teacher of course of mobile apps.<br>
                             Collaboration in the organization of 'The Hour of Code', a mundial event that brings the technology and informatics to the students.<br>
                             <b>Investments association (member)</b>
                             </p>
@@ -291,9 +309,9 @@
                          </div>
 
                          <strong>Team management</strong>
-                              <span class="color-white pull-right">95%</span>
+                              <span class="color-white pull-right">90%</span>
                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                                    </div>
 
                          <strong>Active learning</strong>
@@ -306,7 +324,7 @@
 
                               <span class="color-white pull-right">80%</span>
                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
                                    </div>
 
                          <strong>Teaching skills</strong>
@@ -344,7 +362,7 @@
                                    </div>
 
                          <strong>Networking</strong>
-                              <span class="color-white pull-right">100%</span>
+                              <span class="color-white pull-right">85%</span>
                                    <div class="progress">
                                         <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
                                    </div>
@@ -373,15 +391,15 @@
                                    </div>
 
                          <strong>BlockChain</strong>
-                              <span class="color-white pull-right">65%</span>
+                              <span class="color-white pull-right">30%</span>
                                    <div class="progress">
                                         <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
                                    </div>
 
                          <strong>Java</strong>
-                              <span class="color-white pull-right">100%</span>
+                              <span class="color-white pull-right">90%</span>
                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                                        <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
                                    </div>
                      </div>
                </div>
@@ -392,15 +410,208 @@
 
 
 
+
+
+
+
+
+<!-- SKILLS section2-->
+<section id="language2" class="parallax-section" >
+     <div class="container">
+          <h1>Soft Skills</h1>
+          <div class="row">
+
+              <!-- COLUMNA 1 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                   <div class="section-title">
+                        <h1>General</h1>
+                        <ul class="ul_edited">
+                          <li> Active learning</li>
+                          <li> Teaching Skills</li>
+                          <li> Effective feedback</li>
+                          <li> Passion &amp; motivation</li>
+                          <li> Teamwork</li>                          
+                        </ul>
+                   </div>
+                 </div>
+               </div>
+
+              <!-- COLUMNA 2 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="lang-thumb">
+                     <!-- SECTION TITLE -->
+                     <div class="section-title">
+                        <h1>Business</h1>
+                        <ul class="ul_edited">
+                          <li> Team management</li>
+                          <li> Leadership</li>
+                          <li> Project management &amp; planning</li>
+                          <li> Value creator</li>                     
+                        </ul>
+                     </div>
+                   </div>
+               </div>
+
+              <!-- COLUMNA 3 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                  <!-- SECTION TITLE -->
+                  <div class="section-title">
+                    <h1>Software</h1>
+                        <ul class="ul_edited">
+                        <li> Elicitation &amp; software engineering</li>
+                        <li> Software development methodologies</li>
+                        <li> Concept desing</li>
+                        <li> Value creator</li>
+                        <li> Early prototyping</li>                           
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            
+
+          </div>
+     </div>
+</section>
+<!--- END OF SECTION -->
+
+
+
+
+
+<!-- SKILLS section2-->
+<section id="language2" class="parallax-section" style="background-color: #f3f3f3">
+     <div class="container">
+          <h1>Soft Skills</h1>
+          <div class="row">
+
+              <!-- COLUMNA 1 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                   <div class="section-title">
+                        <h1>General</h1>
+                        <ul class="ul_edited">
+                          <li> Active learning</li>
+                          <li> Teaching Skills</li>
+                          <li> Effective feedback</li>
+                          <li> Passion &amp; motivation</li>
+                          <li> Teamwork</li>                          
+                        </ul>
+                   </div>
+                 </div>
+               </div>
+
+              <!-- COLUMNA 2 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="lang-thumb">
+                     <!-- SECTION TITLE -->
+                     <div class="section-title">
+                        <h1>Business</h1>
+                        <ul class="ul_edited">
+                          <li> Team management</li>
+                          <li> Leadership</li>
+                          <li> Project management &amp; planning</li>
+                          <li> Value creator</li>                     
+                        </ul>
+                     </div>
+                   </div>
+               </div>
+
+              <!-- COLUMNA 3 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                  <!-- SECTION TITLE -->
+                  <div class="section-title">
+                    <h1>Software</h1>
+                        <ul class="ul_edited">
+                        <li> Elicitation &amp; software engineering</li>
+                        <li> Software development methodologies</li>
+                        <li> Concept desing</li>
+                        <li> Value creator</li>
+                        <li> Early prototyping</li>                           
+                      </ul>
+                  </div>
+                </div>
+              </div>
+            
+
+          </div>
+     </div>
+</section>
+<!--- END OF SECTION -->
+
+
+
+
+
+<!-- LANGUAGE SECTION -->
+<section id="language" class="parallax-section" >
+     <div class="container">
+          <h1>Languages</h1>
+          <div class="row">
+
+              <!-- COLUMNA 1 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                   <div class="section-title">
+                        <h1>English</h1>
+                        <p>
+                          Professional working proficiency
+                          <b>TOEFL score: 97 </b><br>
+                        </p>
+                        <!-- BOTON a toefl pdf -->
+                        <a href="./assets/pdf/Toefl.pdf" class="btn btn-dark with-arrow smoth-scroll">References
+                        <i class="fa fa-language"></i>
+                        </a>
+                   </div>
+                 </div>
+               </div>
+
+              <!-- COLUMNA 2 -->
+               <div class="col-md-4 col-sm-12">
+                  <div class="lang-thumb">
+                     <!-- SECTION TITLE -->
+                     <div class="section-title">
+                        <h1>French</h1>
+                        <p>
+                          Limited working proficiency <br>                         
+                          Abroad experience for learning french <br>
+                          French Learning Tandem with native
+                        </p>
+                     </div>
+                   </div>
+               </div>
+
+              <!-- COLUMNA 3 -->
+              <div class="col-md-4 col-sm-12">
+                <div class="lang-thumb">
+                  <!-- SECTION TITLE -->
+                  <div class="section-title">
+                    <h1>Spanish</h1>
+                    <p>
+                      <b> Native </b>
+                      Communication skills <br>
+                      Redaction and writting skills
+                    </p>
+                  </div>
+                </div>
+              </div>
+            
+
+          </div>
+     </div>
+</section>
+<!--- END OF LANGUAGES SECTION -->
+
+
+
+
 <!--- TIMELINE SECTION -->
 <section id="timeline"  class="container-fluid">
 <div class="container">
     <h1>Abroad Experiences</h1>
         <p>A person is not just defined by the studies or work experience, but also of the experiences lived and the opportunities that has taken. Here are some of my abroad experiences: 
-            <blockquote>        
-             <strong>The World is a book, and those who do not travel read only a page.</strong>
-             <em>Saint Augustine.</em>
-         </blockquote>
     </p>
     
     <div class="row">
@@ -410,7 +621,7 @@
     <ul class="timeline">
         <li>
           <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Tampere University of Technollogy</h4>
               </div>
@@ -422,7 +633,7 @@
         </li>
         <li class="timeline-inverted">
           <div class="timeline-badge warning"><i class="fa fa-briefcase"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel  ani_right animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">UKSA Work experience</h4>
             </div>
@@ -438,7 +649,7 @@
         </li>
         <li>
           <div class="timeline-badge danger"><i class="fa fa-plane"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left2 animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Summer program experience</h4>
               </div>
@@ -450,6 +661,13 @@
         </li>
     </ul>
   </div>
+
+    <p>
+      <blockquote>        
+         <strong>The World is a book, and those who do not travel read only a page.</strong>
+         <em>Saint Augustine.</em>
+      </blockquote>
+    </p>
 </div>
 </section>
 
@@ -520,6 +738,40 @@
 -->
 
 
+<script type="text/javascript">
+    
+$(document).ready(function(){
+
+// saludo
+$('.saludo').css('opacity', 0);
+
+  $('.saludo').waypoint(function() {
+      $('.saludo').addClass('bounceIn');
+  }, { offset: '70%' });
+
+
+ 
+// hide our element on page load 
+$('.ani_left').css('opacity', 0);
+$('.ani_right').css('opacity', 0);
+$('.ani_left2').css('opacity', 0);
+
+  $('.ani_left').waypoint(function() {
+      $('.ani_left').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+  $('.ani_right').waypoint(function() {
+      $('.ani_right').addClass('fadeInRight');
+  }, { offset: '70%' });
+ 
+    $('.ani_left2').waypoint(function() {
+      $('.ani_left2').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+ 
+});
+
+</script>
 
 </body>
 </html>
