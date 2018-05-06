@@ -456,16 +456,19 @@ background: #ffffff;
 
 #language{
     padding: 95px 0 50px;
-    background: #fff;
+    background: #f3f3f3;
 }
 
 
 
 #language .lang-thumb {
   
-  background: #f3f3f3;
+  /*background: #f3f3f3; */
+  background: #fff;
   padding: 32px 42px;
   min-height: 260px;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
 }
 
 
