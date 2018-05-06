@@ -33,6 +33,10 @@
 <!-- MENU TRANSITION JS -->
 <script src="./js/menu_transition.js"></script>
 
+<!-- WAYPOINT -->
+<script src="./animations/jquery.waypoints.min.js"></script>
+
+
 <!--
 	<script type="text/javascript" src="./js/aos.js" async=""></script>
 	<script type="text/javascript" src="./js/main.min.js" async=""></script>
@@ -42,7 +46,7 @@
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>      -->
 <script type="text/javascript" src="./js/own/add_timeline.js"></script>
-<!--Include the above in your HEAD tag -->
+
 
 
 
@@ -51,6 +55,18 @@
 
 <!-- HOJA DE ESTILOS PROPIA -->
 <link rel="stylesheet" href="./css/own_uco_styles.css">
+
+<!-- ANIMATE CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+<!-- WAYPOINT-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+
+
+
 
 
 </head>
@@ -102,7 +118,7 @@
 						</div>
 
 						<!-- home title -->
-						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="aos-init aos-animate">
+						<div data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0" class="animated saludo aos-init aos-animate">
 							<h1>Hi, I'm Ignacio Laviña</h1>
 							<h3 id="text-rotator">
 								
@@ -224,12 +240,12 @@
 
 <!-- EDUCATION -->
 <section id="education" class="container-fluid">
-    <div class="container">
+    <div class="container animated">
         <h1>Education</h1>
          <!-- TUT-->
          <div class="lib-panel row box-shadow">
             <div class="col-md-4 col-sm-5 col-xs-12" style="margin-top: 30px text-align: center;">
-                <img class="education_img tut" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
+                <img class="education_img tut animated" src="./img/education/tut.png" style="margin-top: 20px;margin-bottom: 15px;">
                 <h5>Tampere University of Technology, Finland | 2016 - 2017</h5>
             </div>
             <div class="col-md-8 col-sm-5 col-xs-12">
@@ -605,7 +621,7 @@
     <ul class="timeline">
         <li>
           <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Tampere University of Technollogy</h4>
               </div>
@@ -617,7 +633,7 @@
         </li>
         <li class="timeline-inverted">
           <div class="timeline-badge warning"><i class="fa fa-briefcase"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel  ani_right animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">UKSA Work experience</h4>
             </div>
@@ -633,7 +649,7 @@
         </li>
         <li>
           <div class="timeline-badge danger"><i class="fa fa-plane"></i></div>
-          <div class="timeline-panel">
+          <div class="timeline-panel ani_left2 animated">
             <div class="timeline-heading">
               <h4 class="timeline-title">Summer program experience</h4>
               </div>
@@ -722,6 +738,40 @@
 -->
 
 
+<script type="text/javascript">
+    
+$(document).ready(function(){
+
+// saludo
+$('.saludo').css('opacity', 0);
+
+  $('.saludo').waypoint(function() {
+      $('.saludo').addClass('bounceIn');
+  }, { offset: '70%' });
+
+
+ 
+// hide our element on page load 
+$('.ani_left').css('opacity', 0);
+$('.ani_right').css('opacity', 0);
+$('.ani_left2').css('opacity', 0);
+
+  $('.ani_left').waypoint(function() {
+      $('.ani_left').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+  $('.ani_right').waypoint(function() {
+      $('.ani_right').addClass('fadeInRight');
+  }, { offset: '70%' });
+ 
+    $('.ani_left2').waypoint(function() {
+      $('.ani_left2').addClass('fadeInLeft');
+  }, { offset: '70%' });
+ 
+ 
+});
+
+</script>
 
 </body>
 </html>
