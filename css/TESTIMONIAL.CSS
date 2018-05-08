@@ -39,6 +39,8 @@
     overflow: hidden;
     transition: all 0.4s;
 }
+
+
 #quote-carousel .carousel-indicators .active {
     background: #333333;
     width: 128px;
@@ -48,9 +50,36 @@
     opacity: 1;
     overflow: hidden;
 }
-.carousel-inner {
-    min-height: 300px;
+
+@media screen and (max-width: 760px) {
+
+    .carousel-indicators .active {
+
+    display: block;
+    background: #333333;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+    }
+
+
+    .carousel-indicators li {
+        display: none;
+    }
+
+
+    .quote-carousel{
+        margin-top: 100px;
+    }
 }
+
+
+
+
+
 .item blockquote {
     border-left: none;
     margin: 0;
