@@ -553,6 +553,22 @@
     <h3>Bootstrap Timeline Example <button class="btn btn-primary" id="add">Click To add event</button></h3>
     -->
     <ul class="timeline">
+      <!-- California-->
+        <li class="timeline-inverted">
+          <div class="timeline-badge warning"><i class="fa fa-graduation-cap"></i></div>
+          <div class="timeline-panel  ani_right2 animated">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">University of California, Santa Cruz</h4>
+            </div>
+            <div class="timeline-body">
+              <p><small class="text-muted"><i class="fas fa-calendar-alt"></i> California, 2018-2019</small></p>
+              <p>Abroad study experience at the University of California.</p>
+              <p>Involved in the association of Information Management Systems. ath the International Living Center sharing experiences and culture with other students around the world.</p>
+              <p>Current experience.</p>
+            </div>
+          </div>
+        </li>
+        <!-- Finland-->
         <li>
           <div class="timeline-badge info"><i class="fa fa-graduation-cap"></i></div>
           <div class="timeline-panel ani_left animated">
@@ -686,9 +702,15 @@ $('.saludo').css('opacity', 0);
 
  
 // hide our element on page load 
+
+$('.ani_right2').css('opacity', 0);
 $('.ani_left').css('opacity', 0);
 $('.ani_right').css('opacity', 0);
 $('.ani_left2').css('opacity', 0);
+
+  $('.ani_right2').waypoint(function() {
+      $('.ani_right2').addClass('fadeInRight');
+  }, { offset: '70%' });
 
   $('.ani_left').waypoint(function() {
       $('.ani_left').addClass('fadeInLeft');
