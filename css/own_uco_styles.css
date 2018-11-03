@@ -420,7 +420,7 @@ background: #ffffff;
 
 .ul_edited {
   list-style-type: none;
-  position: absolute;
+  position: relative;
   margin-left: -20px;
 }
 /*
@@ -444,7 +444,7 @@ padding: 50px;
   background: #fff;
   padding: 32px 42px;
   min-height: 260px;
-  height: 320px;
+  height: 300px;
   border: 1px solid #d4d4d4;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
@@ -461,7 +461,7 @@ padding: 50px;
   }
 
 .modal{
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 
