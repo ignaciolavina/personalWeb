@@ -303,14 +303,36 @@ p {
 }
 
 
+/* 07. SKILLS _one
+=================================================*/
+
+#skills_one {
+
+    padding: 20px 0 50px;
+}
+
+#skills_one .lang-thumb-one{
+    /*background: #f3f3f3; */
+  background: #fff;
+  padding: 32px 42px;
+  min-height: 260px;
+  border: 1px solid #d4d4d4;
+  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
 
 
+#skills_one .ul_edited {
+  list-style-type: none;
+  position: relative;
+  margin-left: -20px;
+}
 
 /* 07. SKILLS
 =================================================*/
 
 #skills {
-    padding: 95px 0 50px;
+    padding: 20px 0 50px;
     background: #fff;
     /*
     background: #f2f2f2;
@@ -431,10 +453,6 @@ padding: 50px;
 
 #skills .ul_edited :before{content: "\2014"} 
 
-
-#skills{
-    padding: 95px 0 50px;
-}
 
 
 
