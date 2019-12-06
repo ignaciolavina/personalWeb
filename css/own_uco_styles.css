@@ -303,6 +303,46 @@ p {
 }
 
 
+
+/* 07. WORK EXPERIENCE
+=================================================*/
+
+#work_experience {
+    padding: 60px 0 65px;
+    background: #fff;
+    padding-bottom: 0px;
+}
+
+
+#work_experience h2 {
+    margin-top: 0;
+}
+
+.card-deck {
+}
+
+.card {
+
+    width: 100%;
+    float: left;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card .card-img-top{
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
 /* 07. SKILLS _one
 =================================================*/
 
