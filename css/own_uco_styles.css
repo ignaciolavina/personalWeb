@@ -327,15 +327,27 @@ p {
     float: left;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+
+
+}
+
+.card-img {
+  padding: 20px;  
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.card-body {
+  margin-top: 10px;
 }
 
 .card .card-img-top{
     width: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 20px;
+}
+
+.card-footer {
+  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 
