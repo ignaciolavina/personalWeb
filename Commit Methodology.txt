@@ -1,0 +1,27 @@
+<fix> bug/ fixes
+<feature> new feature
+<refactor>
+<docs> Documentation & Info
+<style>
+<chore> updating gulp tasks
+<perf> code performance improvements
+<test>
+<vendor> update version packages
+
+6-December-2019
+TAGS: Version_2 released
+BRANCHES:
+	gh_pages -> production branche
+	master -> main branche (New Dev)
+	Not working with the other branches anymore
+New branching methodology:
+	gh_pages -> Only really urgent hotfixes
+	master -> Documentation, general stuff
+	dev_V2 -> General Developement
+		work/ others -> asside branches for specific work
+
+SourceTree: To merge properly:
+1. Place in the less updated branche (gh-pages) (in bold)
+2. Simple click on the updated branche (the one with the changes you want to bring)
+3. Merge
+
