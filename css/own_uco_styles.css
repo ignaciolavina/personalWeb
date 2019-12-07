@@ -43,6 +43,7 @@ p {
 }
 
 
+
 /* 04. NAVIGATION
 =================================================*/
 
@@ -301,6 +302,69 @@ p {
   margin-bottom: 40px;
   padding-bottom: 40px;
 }
+
+
+
+/* 07. WORK EXPERIENCE
+=================================================*/
+
+#work_experience {
+    padding: 60px 0 65px;
+    background: #fff;
+    padding-bottom: 0px;
+}
+
+
+#work_experience h2 {
+    margin-top: 0;
+}
+
+.card-deck {
+}
+
+.card {
+    width: 100%;
+    float: left;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    margin:20px;
+}
+
+.card-img {
+  padding: 20px;  
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+}
+
+.card-body {
+  /*padding: 10px;*/
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.card .card-img-top{
+    width: 100%;
+    
+    height:auto;
+}
+
+.card-footer {
+  margin-bottom: 15px;
+}
+
+.other-jobs-card {
+    width: 100%;
+    float: left;
+    border-radius: .25rem;
+    margin:20px;
+}
+
+.other-jobs {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 
 
 /* 07. SKILLS _one
