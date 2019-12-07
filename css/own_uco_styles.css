@@ -43,6 +43,7 @@ p {
 }
 
 
+
 /* 04. NAVIGATION
 =================================================*/
 
@@ -322,14 +323,12 @@ p {
 }
 
 .card {
-
     width: 100%;
     float: left;
     border: 1px solid rgba(0,0,0,.125);
     border-radius: .25rem;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-
-
+    margin:20px;
 }
 
 .card-img {
@@ -338,7 +337,9 @@ p {
 }
 
 .card-body {
-  margin-top: 10px;
+  /*padding: 10px;*/
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 .card .card-img-top{
@@ -346,12 +347,21 @@ p {
 }
 
 .card-footer {
-  margin-top: 10px;
   margin-bottom: 15px;
 }
 
+.other-jobs-card {
+    width: 100%;
+    float: left;
+    border-radius: .25rem;
+    margin:20px;
+}
 
-
+.other-jobs {
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  margin-bottom: 10px;
+  padding: 10px;
+}
 
 
 
